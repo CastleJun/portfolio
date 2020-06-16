@@ -124,8 +124,17 @@ p {
 
 .navbar__menu__item:hover {
     background: var(--color-dark-pink);
+    border-radius: var(--size-border-radius);
 }
 
+.navbar__toggle-btn{
+    position: absolute;
+    right: 32px;
+    top: 24px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
 /* Home */
 #home {
     background: url("../images/homebackground.png") center/cover no-repeat;
@@ -435,4 +444,23 @@ p {
 .contact__links i:hover{
     transform: scale(1.1);
     color: var(--color-yellow);
+}
+
+
+/* media query */
+@media screen and (max-width: 768px){
+    .navbar__toggle-btn{
+        display: block;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
 }
