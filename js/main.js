@@ -40,3 +40,4 @@ homeContactBtn.addEventListener('click', () => {
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
+}
